@@ -28,8 +28,8 @@ const Testimonial = () => {
           <div>
             <div className="aspect-square rounded-2xl shadow-lg overflow-hidden group cursor-pointer">
               <img
-                src="/nz-farmland.jpg"
-                alt="New Zealand farmland landscape"
+                src="/testimonial-cows.jpg"
+                alt="New Zealand rural countryside with grazing cows"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
