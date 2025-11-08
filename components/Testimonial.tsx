@@ -1,4 +1,10 @@
+'use client';
+
+import { useState } from 'react';
+
 const Testimonial = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const stats = [
     { number: '< 2s', label: 'Average Load Time' },
     { number: '99.9%', label: 'Uptime Guarantee' },
@@ -30,7 +36,11 @@ const Testimonial = () => {
               <img
                 src="/testimonial-cows.jpg"
                 alt="New Zealand rural countryside with grazing cows"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+                onLoad={() => setImageLoaded(true)}
+                className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${
+                  imageLoaded ? 'opacity-100' : 'opacity-0'
+                }`}
               />
             </div>
           </div>
