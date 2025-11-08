@@ -1,10 +1,4 @@
-'use client';
-
-import { useState } from 'react';
-
 const SeeTheBigPicture = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
   const points = [
     {
       number: '01',
@@ -74,10 +68,7 @@ const SeeTheBigPicture = () => {
                 src="/farmland-nz.jpg"
                 alt="Farmland landscape in New Zealand"
                 loading="lazy"
-                onLoad={() => setImageLoaded(true)}
-                className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${
-                  imageLoaded ? 'opacity-100' : 'opacity-0'
-                }`}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
           </div>

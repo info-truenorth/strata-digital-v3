@@ -71,6 +71,26 @@
     }
   }
 
+  /* Wind animation for hero background */
+  @keyframes wind-sway {
+    0%, 100% {
+      transform: scale(1) translateX(0);
+    }
+    25% {
+      transform: scale(1.02) translateX(-2px);
+    }
+    50% {
+      transform: scale(1.03) translateX(4px);
+    }
+    75% {
+      transform: scale(1.02) translateX(-1px);
+    }
+  }
+
+  .wind-sway {
+    animation: wind-sway 8s ease-in-out infinite;
+  }
+
   .feature-card {
     opacity: 0;
     animation: fade-in-up 0.6s ease-out forwards;

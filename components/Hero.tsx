@@ -4,7 +4,7 @@ const Hero = () => {
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat wind-sway"
           style={{
             backgroundImage: "url('/hero-nz-bush.webp')",
             backgroundAttachment: 'fixed',
