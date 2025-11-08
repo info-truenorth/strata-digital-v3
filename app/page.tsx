@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <Hero />
       <SeeTheBigPicture />
-      <Testimonial />
       <WhyChooseUs />
+      <Testimonial />
       <Process />
       <LargeImage />
       <FinalCTA />
